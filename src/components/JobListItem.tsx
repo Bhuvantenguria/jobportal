@@ -1,4 +1,4 @@
-// import companyLogoPlaceholder from "path/to/asset/folder/companyLogoPlaceholder.png";
+import companyLogoPlaceholder from "@/assets/company-logo.jpg";
 import { formatMoney, relativeDate } from '@/lib/utils';
 
 import { job } from "@prisma/client";
@@ -25,7 +25,7 @@ export default function JobListItem({
     return (
         <article className="flex gap-3 rounded-lg border p-5 hover:bg-muted/60">
             <Image 
-                src={companyLogoUrl || "/path/to/asset/folder/companyLogoPlaceholder.png"}
+                src={companyLogoUrl || companyLogoPlaceholder}
                 alt={`${companyName} logo`} 
                 width={100} 
                 height={100} 
@@ -61,7 +61,7 @@ export default function JobListItem({
             </div>
             <div className="hidden shrink-0 flex-col items-end justify-between sm:flex">
                 {/* Uncomment the line below if Badge component is available */}
-                {/* <Badge>{type}</Badge> */}
+                <Badge>{type}</Badge>
                 <span className="flex items-center gap-1.5 text-muted-foreground">
                     <Clock size={16} />
                     {relativeDate(createdAt)}

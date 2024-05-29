@@ -9,7 +9,7 @@ const placeholderJobs = [
         applicationUrl: "https://jobs.hireme.com/en_US/careers/Jobbetail/Testing-In",
         slug: "testing-intern-at-hireme-2024-2025",
         salary: 40000,
-        approved: true,
+        approved: false,
         description: `About Hireme*
 
 HARMAN 15 proud to be an Equal Opportunity/Affirmative Action employer. All
@@ -101,7 +101,7 @@ MarketMasters is a leader in innovative marketing solutions.
         applicationUrl: "https://careers.creativeworks.com/ui-ux-designer",
         slug: "ui-ux-designer-at-creativeworks-2024-2025",
         salary: 45000,
-        approved: true,
+        approved: false,
         description: `About CreativeWorks*
 
 CreativeWorks is dedicated to delivering outstanding design solutions.

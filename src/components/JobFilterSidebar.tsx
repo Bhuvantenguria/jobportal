@@ -1,8 +1,8 @@
-// import {jobTypes} from "@/lib/job-types";
+import {jobTypes} from "@/lib/job-types";
 import prisma from "@/lib/prisma";
-// import {JobFilterValues , jobFilterSchema} from "@/lib/validation";
+import {JobFilterValues , jobFilterSchema} from "@/lib/validation";
 import {redirect} from "next/navigation";
-// import FormSubmitButton from './FormSubmitButton';
+import FormSubmitButton from './FormSubmitButton';
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import Select from "./ui/Select";
@@ -60,7 +60,7 @@ export default async function JobFilterSidebar({
                             defaultValue={defaultValues?.type || ""}
                         >
                             <option value="">All types</option>
-                            {JobTypes.map((type) => (
+                            {jobTypes.map((type) => (
                                 <option key={type} value={type}>
                                     {type}
                                 </option>
