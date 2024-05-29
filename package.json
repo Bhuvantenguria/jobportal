@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed" : "node src/lib/seed.js",
+    "postinstall": "prisma generator"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.4.2",
