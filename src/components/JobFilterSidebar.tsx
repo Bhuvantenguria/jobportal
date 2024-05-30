@@ -20,6 +20,7 @@ async function filterJobs(formData:FormData){
         ...(location&&{location}),
         ...(remote&&{remote:"true"})
     });
+    console.log(searchParams.toString())
     redirect(`/?${searchParams.toString()}`);
 }
 
@@ -40,7 +41,7 @@ export default async function JobFilterSidebar({
 
     return (
         <aside className="lg:sticky top-0 h-fit rounded-lg border bg-background p-4">
-            <form action="/filter-jobs" key={JSON.stringify(defaultValues)}>
+            <form action="/" key={JSON.stringify(defaultValues)}>
                 <div className="space-y-4">
                     <div className="flex flex-col gap-2">
                         <Label htmlFor="q">Search</Label>
