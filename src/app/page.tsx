@@ -32,7 +32,7 @@ export function generateMetadata({
   searchParams: { q, type, location, remote },
 }: PageProps): Metadata {
   return {
-    title: `${getTitle({ q, type, location, remote: remote === "true" })} | Dev Naukri`,
+    title: `${getTitle({ q, type, location, remote: remote === "true" })} | Shadow Jobs`,
   };
 }
 
